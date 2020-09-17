@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Wfood_Activity"
+    android:background="#FFC300">
+
+    <TextView
+        android:id="@+id/txtTituloHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        android:text="@string/titulohora"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="90dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="56sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#000"
+        android:onClick="onClickIniciar"
+        android:text="@string/iniciar"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnParar"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#000"
+        android:onClick="onClickParar"
+        android:text="@string/parar"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnZerar"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#f00"
+        android:onClick="onClickZerar"
+        android:text="@string/zerar"
+        android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CozinhaActivity"
+    android:orientation="vertical"
+    android:padding="16px"
+    android:background="#FFC300">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/titulo" />
+
+    <EditText
+        android:id="@+id/edit_Mensagem"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#313131"
+        android:textColor="#fff"
+        android:layout_margin="30dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:onClick="onEnviarPedidoZAP"
+        android:text="@string/enviar" />
+
+</LinearLayout>

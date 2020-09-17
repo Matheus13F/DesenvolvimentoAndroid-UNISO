@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16px"
+    android:orientation="vertical"
+    tools:context=".Wfood_Activity"
+    android:background="#FFC300">
+
+    <!-- no textview eu coloquei alguns atributos de estilo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tituloRestaurante"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- no  botao adicionei a função onclick para chamar a função e alterar o texto-->
+    <Button
+        android:id="@+id/buttonPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15px"
+        android:layout_margin="30dp"
+        android:background="#C70039"
+        android:textColor="#fff"
+        android:onClick="onClickResgistrarPedido"
+        android:text="Registrar Pedido" />
+
+    <!-- mesma coisa porem um botao diferente-->
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#313131"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:padding="15px"
+        android:onClick="onEnivarHoras"
+        android:text="@string/horas" />
+
+    <Button
+        android:id="@+id/btnEnviarParaCozinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#313131"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:padding="15px"
+        android:onClick="onEnviarParaCozinha"
+        android:text="@string/cozinha" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hamburgepng" />
+
+
+</LinearLayout>

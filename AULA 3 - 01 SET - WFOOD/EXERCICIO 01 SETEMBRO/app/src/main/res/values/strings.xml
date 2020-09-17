@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wfood</string>
+    <string name="tituloRestaurante"> WFood </string>
+    <!-- String nao fixa no codigo para titulo da aplicação -->
+
+    <string name="cozinha">Pedidos Para Cozinha</string>  <!-- String fixa para o botao que abriar a nova activity-->
+    <string name="hint">Escreva seu pedido aqui</string>  <!-- String para hint de um edit text -->
+    <string name="enviar">Enviar para WhatsApp</string> <!-- String para o botao de enviar pedidos por whatsapp-->
+    <string name="titulo">COZINHA</string>  <!-- String para titulo da nova activity-->
+    <string name="horas">Horas Trabalhadas</string>
+    <string name="iniciar">INICIAR EXPEDIENTE</string>
+    <string name="parar">PAUSAR</string>
+    <string name="zerar">ENCERRAR EXPEDIENTE</string>
+    <string name="titulohora">Horas trabalhadas</string>
+
+</resources>
