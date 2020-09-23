@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16px"
+    android:padding="19px"
     android:orientation="vertical"
     tools:context=".Wfood_Activity"
     android:background="#FFC300">
@@ -59,11 +59,23 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:background="#313131"
-        android:paddingTop="20dp"
-        android:textColor="#fff"
-        android:padding="15px"
         android:onClick="onEnviarParaCozinha"
-        android:text="@string/cozinha" />
+        android:padding="15px"
+        android:paddingTop="20dp"
+        android:text="@string/cozinha"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnEnviarParaCozinha2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#313131"
+        android:onClick="onEnviarParaEstoque"
+        android:padding="15px"
+        android:paddingTop="20dp"
+        android:text="@string/estoque"
+        android:textColor="#fff" />
 
     <ImageView
         android:id="@+id/imageView2"

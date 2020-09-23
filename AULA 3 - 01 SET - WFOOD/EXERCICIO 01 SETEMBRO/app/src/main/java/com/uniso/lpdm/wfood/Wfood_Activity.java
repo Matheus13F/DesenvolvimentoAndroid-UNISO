@@ -35,4 +35,9 @@ public class Wfood_Activity extends AppCompatActivity {
         Intent intencao = new Intent(this, Horas_Activity.class);
         startActivity(intencao);
     }
+
+    public void onEnviarParaEstoque(View view) {
+        Intent intencao = new Intent(this, Estoque_Activity.class);
+        startActivity((intencao));
+    }
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC300"
+    android:orientation="vertical"
+    android:padding="19px"
+    tools:context=".EnviarEmailActivity">
+
+    <!-- Codigos de layout para estilizar esta tela
+     utilizado magin para espaçamento
+     o botao enviar capta as informacoes e envia para outro aplicativo-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNomeProdutoNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="@string/nome_produto"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/editNomeProdutoNovo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:hint="Nome do produto em falta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="@string/quantidade_produto"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/editQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25px"
+            android:hint="Digite a quantidade" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviarEmailParaFornecedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#313131"
+        android:onClick="onEnviarEmailFornecedor"
+        android:text="@string/enviar_email"
+        android:textColor="#fff" />
+
+</LinearLayout>

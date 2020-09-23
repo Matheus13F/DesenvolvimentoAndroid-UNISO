@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".Wfood_Activity"
+    tools:context=".Horas_Activity"
     android:background="#FFC300">
 
     <TextView

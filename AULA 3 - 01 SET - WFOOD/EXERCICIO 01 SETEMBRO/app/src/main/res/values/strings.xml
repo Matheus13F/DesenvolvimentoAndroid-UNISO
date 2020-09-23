@@ -12,5 +12,16 @@
     <string name="parar">PAUSAR</string>
     <string name="zerar">ENCERRAR EXPEDIENTE</string>
     <string name="titulohora">Horas trabalhadas</string>
+    <string name="estoque">Estoque</string>
+    <string name="novoproduto">Novo Produto</string>
+    <string name="atualizarproduto">Atualizar Produto</string>
+    <string name="emailfornecedor">E-mail para fornecedores</string>
+    <string name="nome_produto">Produto: </string>
+    <string name="cod_produto">Código: </string>
+    <string name="quantidade_produto">Quantidade: </string>
+    <string name="salvar_produto">Salvar novo produto</string>
+    <string name="atualizar_produto">Atualizar Produto</string>
+    <string name="enviar_email">Enviar E-mail</string>
+
 
 </resources>

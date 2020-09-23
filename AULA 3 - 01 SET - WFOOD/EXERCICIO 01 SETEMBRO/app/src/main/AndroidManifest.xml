@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Horas_Activity"></activity>
+        <activity android:name=".EnviarEmailActivity"></activity>
+        <activity android:name=".AtualizarProdutoActivity" />
+        <activity android:name=".NovoProduto_Activity" />
+        <activity android:name=".Estoque_Activity" />
+        <activity android:name=".Horas_Activity" />
         <activity android:name=".CozinhaActivity" />
         <activity android:name=".Wfood_Activity">
             <intent-filter>

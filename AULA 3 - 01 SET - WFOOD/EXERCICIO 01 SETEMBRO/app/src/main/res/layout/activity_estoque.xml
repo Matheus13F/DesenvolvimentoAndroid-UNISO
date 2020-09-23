@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="19px"
+    android:orientation="vertical"
+    tools:context=".Estoque_Activity"
+    android:background="#FFC300">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/estoque"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:layout_marginBottom="50px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNovo"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#313131"
+            android:onClick="onNovoProduto"
+            android:text="@string/novoproduto"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnAtualizar"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#313131"
+            android:onClick="onAtualizarProduto"
+            android:text="@string/atualizarproduto"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviarEmailParaFornecedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#313131"
+        android:textColor="#fff"
+        android:onClick="onEnviarEmail"
+        android:text="@string/emailfornecedor" />
+
+</LinearLayout>
