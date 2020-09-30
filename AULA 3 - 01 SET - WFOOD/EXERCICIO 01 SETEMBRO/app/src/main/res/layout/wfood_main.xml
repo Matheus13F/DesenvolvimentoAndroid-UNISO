@@ -1,87 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="19px"
+    android:background="#FFC300"
     android:orientation="vertical"
-    tools:context=".Wfood_Activity"
-    android:background="#FFC300">
+    android:padding="19px"
+    tools:context=".Wfood_Activity">
 
     <!-- no textview eu coloquei alguns atributos de estilo -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/tituloRestaurante"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold" />
 
     <!-- no  botao adicionei a função onclick para chamar a função e alterar o texto-->
-    <Button
-        android:id="@+id/buttonPedido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15px"
-        android:layout_margin="30dp"
-        android:background="#C70039"
-        android:textColor="#fff"
-        android:onClick="onClickResgistrarPedido"
-        android:text="Registrar Pedido" />
 
     <!-- mesma coisa porem um botao diferente-->
+
+    <Button
+        android:id="@+id/buttonPedido"
+        android:layout_width="195dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:background="#C70039"
+        android:onClick="onClickResgistrarPedido"
+        android:padding="15px"
+        android:text="Registrar Pedido"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistro" />
+
     <TextView
         android:id="@+id/txtRegistro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
         android:text=""
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
 
     <Button
         android:id="@+id/btnHoras"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
         android:background="#313131"
-        android:paddingTop="20dp"
-        android:textColor="#fff"
-        android:padding="15px"
         android:onClick="onEnivarHoras"
-        android:text="@string/horas" />
+        android:padding="15dp"
+        android:paddingTop="20dp"
+        android:text="@string/horas"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarParaCozinha" />
 
     <Button
         android:id="@+id/btnEnviarParaCozinha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
         android:background="#313131"
         android:onClick="onEnviarParaCozinha"
         android:padding="15px"
         android:paddingTop="20dp"
         android:text="@string/cozinha"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPedido" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/logo_hamburgerfood"
+        android:layout_width="287dp"
+        android:layout_height="289dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnEnviarParaCozinha2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
         android:background="#313131"
         android:onClick="onEnviarParaEstoque"
         android:padding="15px"
         android:paddingTop="20dp"
         android:text="@string/estoque"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHoras"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarParaCozinha"
+        app:layout_constraintVertical_bias="0.485" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hamburgepng" />
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

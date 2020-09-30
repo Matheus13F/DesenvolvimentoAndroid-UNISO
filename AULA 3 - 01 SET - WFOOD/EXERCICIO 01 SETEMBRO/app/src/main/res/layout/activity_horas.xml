@@ -1,70 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical"
-    tools:context=".Horas_Activity"
-    android:background="#FFC300">
+    android:background="#FFC300"
+    tools:context=".Horas_Activity">
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/logo_wfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtTituloHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textColor="#fff"
-        android:textStyle="normal"
+        android:layout_marginTop="32dp"
         android:text="@string/titulohora"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="25sp" />
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6" />
 
     <TextView
         android:id="@+id/txtTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginTop="32dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#fff"
         android:textSize="56sp"
-        android:textStyle="normal" />
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloHora" />
 
     <Button
         android:id="@+id/btnIniciar"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
         android:background="#000"
         android:onClick="onClickIniciar"
         android:text="@string/iniciar"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempo" />
 
     <Button
         android:id="@+id/btnParar"
-        android:layout_width="176dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_width="190dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
         android:background="#000"
         android:onClick="onClickParar"
         android:text="@string/parar"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciar" />
 
     <Button
         android:id="@+id/btnZerar"
-        android:layout_width="174dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_width="241dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
         android:background="#f00"
         android:onClick="onClickZerar"
         android:text="@string/zerar"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnParar" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
