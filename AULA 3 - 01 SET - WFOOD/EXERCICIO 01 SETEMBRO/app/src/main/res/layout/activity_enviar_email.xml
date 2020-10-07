@@ -78,8 +78,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="382dp"
-        android:layout_height="203dp"
+        android:layout_width="364dp"
+        android:layout_height="184dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"

@@ -36,9 +36,9 @@
 
     <Button
         android:id="@+id/btnNovo"
-        android:layout_width="163dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="147dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="136dp"
         android:background="#313131"
         android:onClick="onNovoProduto"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/btnAtualizar"
-        android:layout_width="161dp"
-        android:layout_height="50dp"
+        android:layout_width="147dp"
+        android:layout_height="47dp"
         android:layout_marginTop="136dp"
         android:layout_marginEnd="28dp"
         android:background="#313131"
@@ -62,8 +62,8 @@
 
     <Button
         android:id="@+id/btnEnviarEmailParaFornecedor"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="30dp"
@@ -73,7 +73,7 @@
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAtualizar"
         app:layout_constraintVertical_bias="0.228" />
