@@ -22,7 +22,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="32dp"
         android:background="#C70039"
-        android:onClick="onClickResgistrarPedido"
+        android:onClick="onClickProdutos"
         android:padding="15px"
         android:text="Registrar Pedido"
         android:textColor="#fff"

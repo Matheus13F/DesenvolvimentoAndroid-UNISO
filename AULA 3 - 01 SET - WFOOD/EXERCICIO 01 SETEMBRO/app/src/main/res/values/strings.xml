@@ -23,6 +23,15 @@
     <string name="atualizar_produto">Atualizar Produto</string>
     <string name="enviar_email">Enviar E-mail</string>
     <string name="nome_do_produto_em_falta">Endereço de email</string>
+    <string name="cardapio">Cardápio</string>
+    <string-array name="opcoes">
+        <item>X-Burguer</item>
+        <item>X-Salada</item>
+        <item>X-Bacon</item>
+        <itemm>Porção Fritas Cheddar Bacon</itemm>
+        <item>Proçao Calabresa</item>
+
+    </string-array>
 
 
 </resources>

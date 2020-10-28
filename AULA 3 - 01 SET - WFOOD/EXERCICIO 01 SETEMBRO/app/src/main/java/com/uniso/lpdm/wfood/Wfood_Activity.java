@@ -19,9 +19,9 @@ public class Wfood_Activity extends AppCompatActivity {
     }
 
     //função para registrar na tela um texto, acionada por um botao especifico
-    public void onClickResgistrarPedido(View view) { //funcao para exibir texto na tela
-        TextView registrarPedido = (TextView) findViewById(R.id.txtRegistro);
-        registrarPedido.setText("Registrando pedido...");
+    public void onClickProdutos(View view) { //funcao para exibir texto na tela
+        Intent intencao = new Intent(this, Produtos_Activity.class);
+        startActivity(intencao);
     }
 
     //função em que quando acionada pelo bota, abrira na tela uma nova activity, com novas funcionalidades

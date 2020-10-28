@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EnviarEmailActivity"></activity>
+        <activity android:name=".Produtos_Activity"></activity>
+        <activity android:name=".EnviarEmailActivity" />
         <activity android:name=".AtualizarProdutoActivity" />
         <activity android:name=".NovoProduto_Activity" />
         <activity android:name=".Estoque_Activity" />
