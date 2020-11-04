@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <!--Utilizamos o ImageView para exibir um logo da cafeteria-->
+
+    <!--Um listview é um componente que nos permite listar vários itens de forma
+    organizada na tela. Em outras palavras, ele exibe uma lista de informações que viabiliza a navegação
+    pelo aplicativo. Com ele podemos listar itens estáticos, como os recursos de string
+    organizados em arrays, ou dinamicos, orinundos de alguma fonte dados. Nessa atividade estamos
+    usando uma lsita fixa de itens, na atividade de categoria veremos outras opções para
+    alimentar dados para o listview-->
+    <!--
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="224dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/starbuzz_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+    <ListView
+        android:id="@+id/lista_opcoes"
+        android:layout_width="306dp"
+        android:layout_height="142dp"
+        android:entries="@array/opcoes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_coffee" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
