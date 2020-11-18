@@ -183,6 +183,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         * a atualização */
         if (oldVersion <= 2){
             sql = "ALTER TABLE BEBIDA ADD COLUMN favorita NUMERIC;";
+            sql = "ALTER TABLE COMIDA ADD COLUMN favorita NUMERIC;";
             db.execSQL(sql);
         }
 

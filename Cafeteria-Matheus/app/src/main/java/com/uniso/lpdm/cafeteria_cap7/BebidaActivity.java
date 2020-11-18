@@ -2,12 +2,15 @@ package com.uniso.lpdm.cafeteria_cap7;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -162,6 +165,52 @@ public class BebidaActivity extends AppCompatActivity {
             * Esse objeto possui o método getMessage, que pode ser util para quem for verificar
             * o que aconteceu. Mas essa mensagem é bastante técnica e especifica geralmente, então
             * não é interessante mostrarmos para o usuário, então geramos um log */
+            Log.d("Erro de banco de dados", e.getMessage());
+            toast.show();
+        }
+
+    }
+
+    public void onFavoritaClicked(View view){
+
+        /*Recuperamos diretamente da intenção o ID da bebida que iremos atualizar a situação de
+         * bebida favorita ou não*/
+        int id_bebida = (Integer) getIntent().getExtras().get(EXTRA_BEBIDA_ID);
+        /*Recuperamos o checobox atribuímos o o valor da propriedade checked como o
+         * valor que será atualizado no banco de dados. Usamos o objeto ContentValues
+         * para associarmos o valor com o campo "favorita" da tabela de bebidas.
+         * Como estamos usando o método put() do ContentValues, não precisamos fazer a conversão
+         * do booleano para o valor numérico que deverá ser inserido no banco para representar
+         * um booleano*/
+        CheckBox favorita = (CheckBox) findViewById(R.id.favorita);
+        ContentValues bebidaValues = new ContentValues();
+        bebidaValues.put("favorita", favorita.isChecked());
+
+        /*Criamos o objeto para manipular o banco de dados.*/
+        SQLiteOpenHelper databaseHelper = new DatabaseHelper(this);
+        try{
+
+            /*Diferente do que fizemos anteriormente, aqui recueparmos uma instancia editavel do
+             * banco de dados. Isso porque iremos atualizar um registro, ou seja, vamos escrever no banco*/
+            SQLiteDatabase db = databaseHelper.getWritableDatabase();
+            /*Usamos o método update para atualizar os registros. Informamos a tabela, os dados
+             * que serão atualizados, que é o objeto ContentValues, informamos qual será o campo que
+             * filtrará quais registros serão atualiados e passamos o valor que esses campos deverão
+             * receber.*/
+            db.update(
+                    "BEBIDA",
+                    bebidaValues,
+                    "_id = ?",
+                    new String[]{Integer.toString(id_bebida)}
+            );
+
+            /*Como de costume, fechamos a comunicação com o banco após utiliza-lo*/
+            db.close();
+
+
+        }catch(SQLiteException e){
+            Toast toast = Toast.makeText(this, "Banco indisponivel", Toast.LENGTH_SHORT);
+
             Log.d("Erro de banco de dados", e.getMessage());
             toast.show();
         }

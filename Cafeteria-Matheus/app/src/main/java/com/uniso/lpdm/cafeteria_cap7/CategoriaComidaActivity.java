@@ -38,7 +38,7 @@ public class CategoriaComidaActivity extends AppCompatActivity {
             );
 
             SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(this,
-                    android.R.layout.simple_list_item_1,
+                    android.R.layout.simple_list_item_2,
                     cursor,
                     new String[] {"nome"},
                     new int[] {android.R.id.text1},

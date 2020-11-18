@@ -47,4 +47,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_coffee" />
 
+    <ListView
+        android:id="@+id/lista_favoritas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lista_opcoes"
+        tools:layout_editor_absoluteX="-4dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,5 +8,5 @@
         <item>Comida</item>
         <item>Lojas </item>
     </string-array>
-
+    <string name="recomendado">Recomendar</string>
 </resources>
