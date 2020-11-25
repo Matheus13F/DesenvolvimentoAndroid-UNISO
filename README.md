@@ -1,1 +1,2 @@
-# Conteúdo desenvolvido em aula, na disciplina de Desenvolvimento para Dispositivos Móveis, pela Universidade de Sorocaba
+# Linguagem de programação para dispositivos móveis - UNISO
+## Conteúdo desenvolvido em aula, pela Universidade de Sorocaba
