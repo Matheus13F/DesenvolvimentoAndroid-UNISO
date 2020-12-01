@@ -16,8 +16,7 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-/*Para ler os comentários desse código, o ideal é começar pela BebidaActivity e depois a
-* CategoriaBebidaActivity*/
+
 public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase db;
     private Cursor favoritasCursor;
